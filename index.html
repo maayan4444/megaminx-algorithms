@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megaminx Algorithms</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600" rel="stylesheet">
+  <style>
+    body {
+      background-color: #141414;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .landing-title {
+      font-size: 2em;
+      text-align: center;
+      color: white;
+      margin: 1.5em 0;
+      font-weight: 600;
+    }
+    .landing-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 0 2em;
+    }
+    .landing-item-container {
+      flex: 1 1 200px;
+      max-width: 120px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 5px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .landing-item-container:hover {
+      background-color: #fff;
+      border: 2px solid black;
+    }
+    .landing-image {
+      width: 75%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .landing-item-title {
+      text-align: center;
+      font-weight: 600;
+      padding: 0.5em;
+      color: black;
+    }
+    a.landing-item {
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="landing-title">Megaminx Algorithms</div>
+  <div class="landing-flex">
+    <div class="landing-item-container">
+      <a class="landing-item" href="algs/megaminx/edge-orientation.html">
+        <img src="images/edge_orientation.png" class="landing-image" alt="Edge Orientation">
+        <div class="landing-item-title">Edge Orientation</div>
+      </a>
+    </div>
+
+    <div class="landing-item-container">
+      <a class="landing-item" href="algs/megaminx/corner-orientation.html">
+        <img src="images/corner_orientation.png" class="landing-image" alt="Corner Orientation">
+        <div class="landing-item-title">Corner Orientation</div>
+      </a>
+    </div>
+
+    <div class="landing-item-container">
+      <a class="landing-item" href="algs/megaminx/edge-permutation.html">
+        <img src="images/edge_permutation.png" class="landing-image" alt="Edge Permutation">
+        <div class="landing-item-title">Edge Permutation</div>
+      </a>
+    </div>
+
+    <div class="landing-item-container">
+      <a class="landing-item" href="algs/megaminx/corner-permutation.html">
+        <img src="images/corner_permutation.png" class="landing-image" alt="Corner Permutation">
+        <div class="landing-item-title">Corner Permutation</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

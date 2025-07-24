@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Megaminx Corner Permutation Algorithms</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600" rel="stylesheet" />
+<style>
+  body {
+    background-color: #141414;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 1em 2em;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .algo {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .color-yellow {
+    background-color: yellow;
+  }
+  .color-green {
+    background-color: #4DFF06;
+  }
+  .algo img {
+    max-width: 200px;
+    display: block;
+    margin: 0.5em 0;
+  }
+</style>
+</head>
+<body>
+<div style="margin-bottom: 1em;">
+  <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow; margin-right: 8px; border: 1px solid #ccc;"></span>
+  Learning
+  <span style="display: inline-block; width: 20px; height: 20px; background-color: #4DFF06; margin-left: 20px; margin-right: 8px; border: 1px solid #ccc;"></span>
+  Finished Learning
+</div>
+
+<h1>Megaminx Corner Permutation Algorithms</h1>
+
+<div class="algo">
+  <strong>Case 1:</strong> (R' BR' R BR) (R' F' R BR') (R' BR F R)<br/>
+  <img src="../../images/corner_permutation_case1.png" alt="Corner Permutation Case 1" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 2:</strong> (R' F' BR' R) (BR R' F R) (BR' R' BR R)<br/>
+  <img src="../../images/corner_permutation_case2.png" alt="Corner Permutation Case 2" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 3:</strong> BR' (R' U L U') (R' U L' U') R2 BR<br/>
+  <img src="../../images/corner_permutation_case3.png" alt="Corner Permutation Case 3" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 4:</strong> BR' R2' (U L U' R) (U L' U' R) BR<br/>
+  <img src="../../images/corner_permutation_case4.png" alt="Corner Permutation Case 4" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 5:</strong> y L' (R U2 R' U') (R U R' U') (R U R' U') R U' R' L<br/>
+  <img src="../../images/corner_permutation_case5.png" alt="Corner Permutation Case 5" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 6:</strong> (R U R' U) (R' U' R F') (R U R' U') (R' F R2 U') (R2' U R U')<br/>
+  <img src="../../images/corner_permutation_case6.png" alt="Corner Permutation Case 6" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 7:</strong> R2 U R' U' y (R U R' U') (R U R' U') (R U R') y' R U' R2'<br/>
+  <img src="../../images/corner_permutation_case7.png" alt="Corner Permutation Case 7" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 8:</strong> F (R U2 R' U' R U' R') F' R'  y' (R' U' R U' R' U2 R BR) U'<br/>
+  <img src="../../images/corner_permutation_case8.png" alt="Corner Permutation Case 8" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 9:</strong> [(R U R' U) (R' U' R2 U') (R' U R' U R) U] * 2<br/>
+  <img src="../../images/corner_permutation_case9.png" alt="Corner Permutation Case 9" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 10:</strong> R2 U2 R2' U' R2 U' R2' y' R2' U' R2 U' R2' U2 R2 U'<br/>
+  <img src="../../images/corner_permutation_case10.png" alt="Corner Permutation Case 10" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 11:</strong> R2' U2' R2 U R2' U R2 y R2 U R2' U R2 U2' R2' U<br/>
+  <img src="../../images/corner_permutation_case11.png" alt="Corner Permutation Case 11" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 12:</strong> R2 U2' R2' U' R2 U2'  (R' U R' U') (R' F R2 U')  (R' U' R U) R' F'<br/>
+  <img src="../../images/corner_permutation_case12.png" alt="Corner Permutation Case 12" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 13:</strong> (R' U2 R U') (R' U2 R U2') (R' U' R U2') (R' U R U2') (R' U R)<br/>
+  <img src="../../images/corner_permutation_case13.png" alt="Corner Permutation Case 13" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 14:</strong> (R2 U2' R2' U') (R2 U R2' U') (R2 U R2' U') (R2 U2' R2')<br/>
+  <img src="../../images/corner_permutation_case14.png" alt="Corner Permutation Case 14" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 15:</strong> (R2 U2 R2' U) (R2 U' R2' U) (R2 U' R2' U) (R2 U2 R2')<br/>
+  <img src="../../images/corner_permutation_case15.png" alt="Corner Permutation Case 15" style="width: 80px; height: auto;" />
+</div>
+
+<script>
+  const algos = document.querySelectorAll('.algo');
+
+  algos.forEach(algo => {
+    algo.addEventListener('click', () => {
+      if (!algo.classList.contains('color-yellow') && !algo.classList.contains('color-green')) {
+        algo.classList.add('color-yellow');
+      } else if (algo.classList.contains('color-yellow')) {
+        algo.classList.remove('color-yellow');
+        algo.classList.add('color-green');
+      } else {
+        algo.classList.remove('color-green');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

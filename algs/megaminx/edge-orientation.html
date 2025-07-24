@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megaminx Edge Orientation</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600" rel="stylesheet">
+  <style>
+    body {
+      background-color: #141414;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      padding: 2em;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 600;
+    }
+    .algo-section {
+      margin-top: 2em;
+    }
+    .algo {
+      background-color: #222;
+      border-radius: 8px;
+      padding: 1em;
+      margin-bottom: 1em;
+      border: 1px solid #444;
+    }
+    .algo-title {
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+    .algo-notation {
+      color: #ccc;
+      font-family: monospace;
+    }
+    .algo {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .color-yellow {
+    background-color: yellow;
+  }
+  .color-green {
+    background-color: #4DFF06;
+  }
+  </style>
+</head>
+<body>
+<div style="margin-bottom: 1em;">
+  <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow; margin-right: 8px; border: 1px solid #ccc;"></span>
+  Learning
+  <span style="display: inline-block; width: 20px; height: 20px; background-color: #4DFF06; margin-left: 20px; margin-right: 8px; border: 1px solid #ccc;"></span>
+  Finished Learning
+</div>
+  <h1>Megaminx Edge Orientation Algorithms</h1>
+
+  <div class="algo">
+  <strong>Case 1:</strong> F (R U R' U') F'<br/>
+  <img src="../../images/edge_orientation_case1.png" alt="Edge Orientation Case 1" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 2:</strong> F (U R U' R') F'<br/>
+  <img src="../../images/edge_orientation_case2.png" alt="Edge Orientation Case 2" style="width: 80px; height: auto;" />
+</div>
+
+<div class="algo">
+  <strong>Case 3:</strong> F R U2 (R2' F R F') U2' F'<br/>
+  <img src="../../images/edge_orientation_case3.png" alt="Edge Orientation Case 3" style="width: 80px; height: auto;" />
+</div>
+
+  </div>
+<script>
+  const algos = document.querySelectorAll('.algo');
+
+  algos.forEach(algo => {
+    algo.addEventListener('click', () => {
+      if (!algo.classList.contains('color-yellow') && !algo.classList.contains('color-green')) {
+        algo.classList.add('color-yellow');
+      } else if (algo.classList.contains('color-yellow')) {
+        algo.classList.remove('color-yellow');
+        algo.classList.add('color-green');
+      } else {
+        algo.classList.remove('color-green');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
